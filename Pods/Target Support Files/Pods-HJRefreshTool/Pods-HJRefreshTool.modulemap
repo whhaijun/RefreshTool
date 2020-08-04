@@ -1,0 +1,6 @@
+framework module Pods_HJRefreshTool {
+  umbrella header "Pods-HJRefreshTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4BBBE3B03F88E61C024AA7A /* Pods_HJRefreshTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0FBCB29085E4152CB9646C /* Pods_HJRefreshTool.framework */; };
+		F847798424D8EE5200D1056C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847798324D8EE5200D1056C /* AppDelegate.swift */; };
+		F847798624D8EE5200D1056C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847798524D8EE5200D1056C /* SceneDelegate.swift */; };
+		F847798824D8EE5200D1056C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847798724D8EE5200D1056C /* ViewController.swift */; };
+		F847798B24D8EE5200D1056C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847798924D8EE5200D1056C /* Main.storyboard */; };
+		F847798D24D8EE5300D1056C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F847798C24D8EE5300D1056C /* Assets.xcassets */; };
+		F847799024D8EE5300D1056C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847798E24D8EE5300D1056C /* LaunchScreen.storyboard */; };
+		F84779A024D8EEC900D1056C /* RefreshHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847799824D8EEC900D1056C /* RefreshHelper.swift */; };
+		F84779A124D8EEC900D1056C /* DefaultRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847799924D8EEC900D1056C /* DefaultRefreshView.swift */; };
+		F84779A224D8EEC900D1056C /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847799A24D8EEC900D1056C /* State.swift */; };
+		F84779A324D8EEC900D1056C /* UIScrollView+PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847799B24D8EEC900D1056C /* UIScrollView+PullToRefresh.swift */; };
+		F84779A424D8EEC900D1056C /* AutoRefeshViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847799C24D8EEC900D1056C /* AutoRefeshViewHelper.swift */; };
+		F84779A524D8EEC900D1056C /* DefaultViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847799D24D8EEC900D1056C /* DefaultViewAnimator.swift */; };
+		F84779A624D8EEC900D1056C /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847799E24D8EEC900D1056C /* PullToRefresh.swift */; };
+		F84779A724D8EEC900D1056C /* RefreshViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847799F24D8EEC900D1056C /* RefreshViewAnimator.swift */; };
+		F84779A924D8F44500D1056C /* RefreshSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84779A824D8F44500D1056C /* RefreshSize.swift */; };
+		F84779AF24D8F65100D1056C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84779AD24D8F65100D1056C /* UIColorExtension.swift */; };
+		F84779B024D8F65100D1056C /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84779AE24D8F65100D1056C /* ViewExtension.swift */; };
+		F84779B224D8F84C00D1056C /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84779B124D8F84C00D1056C /* String+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C92DF3BF81C4B51202B5B96A /* Pods-HJRefreshTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJRefreshTool.release.xcconfig"; path = "Target Support Files/Pods-HJRefreshTool/Pods-HJRefreshTool.release.xcconfig"; sourceTree = "<group>"; };
+		DB0FBCB29085E4152CB9646C /* Pods_HJRefreshTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJRefreshTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F847798024D8EE5200D1056C /* HJRefreshTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJRefreshTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F847798324D8EE5200D1056C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F847798524D8EE5200D1056C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F847798724D8EE5200D1056C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F847798A24D8EE5200D1056C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F847798C24D8EE5300D1056C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F847798F24D8EE5300D1056C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F847799124D8EE5300D1056C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F847799824D8EEC900D1056C /* RefreshHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHelper.swift; sourceTree = "<group>"; };
+		F847799924D8EEC900D1056C /* DefaultRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRefreshView.swift; sourceTree = "<group>"; };
+		F847799A24D8EEC900D1056C /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		F847799B24D8EEC900D1056C /* UIScrollView+PullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+PullToRefresh.swift"; sourceTree = "<group>"; };
+		F847799C24D8EEC900D1056C /* AutoRefeshViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoRefeshViewHelper.swift; sourceTree = "<group>"; };
+		F847799D24D8EEC900D1056C /* DefaultViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultViewAnimator.swift; sourceTree = "<group>"; };
+		F847799E24D8EEC900D1056C /* PullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		F847799F24D8EEC900D1056C /* RefreshViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshViewAnimator.swift; sourceTree = "<group>"; };
+		F84779A824D8F44500D1056C /* RefreshSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshSize.swift; sourceTree = "<group>"; };
+		F84779AD24D8F65100D1056C /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F84779AE24D8F65100D1056C /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		F84779B124D8F84C00D1056C /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		F8A4F9B9F60967E3762323CE /* Pods-HJRefreshTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJRefreshTool.debug.xcconfig"; path = "Target Support Files/Pods-HJRefreshTool/Pods-HJRefreshTool.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F847797D24D8EE5200D1056C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BBBE3B03F88E61C024AA7A /* Pods_HJRefreshTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31EB329E5880BD6B1F46AC69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4F9B9F60967E3762323CE /* Pods-HJRefreshTool.debug.xcconfig */,
+				C92DF3BF81C4B51202B5B96A /* Pods-HJRefreshTool.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D0B510C8FABB47604E23B4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB0FBCB29085E4152CB9646C /* Pods_HJRefreshTool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F847797724D8EE5200D1056C = {
+			isa = PBXGroup;
+			children = (
+				F847798224D8EE5200D1056C /* HJRefreshTool */,
+				F847798124D8EE5200D1056C /* Products */,
+				31EB329E5880BD6B1F46AC69 /* Pods */,
+				3D0B510C8FABB47604E23B4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F847798124D8EE5200D1056C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F847798024D8EE5200D1056C /* HJRefreshTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F847798224D8EE5200D1056C /* HJRefreshTool */ = {
+			isa = PBXGroup;
+			children = (
+				F84779AC24D8F62300D1056C /* Extension */,
+				F847799724D8EE8A00D1056C /* RefreshTool */,
+				F847798324D8EE5200D1056C /* AppDelegate.swift */,
+				F847798524D8EE5200D1056C /* SceneDelegate.swift */,
+				F847798724D8EE5200D1056C /* ViewController.swift */,
+				F847798924D8EE5200D1056C /* Main.storyboard */,
+				F847798C24D8EE5300D1056C /* Assets.xcassets */,
+				F847798E24D8EE5300D1056C /* LaunchScreen.storyboard */,
+				F847799124D8EE5300D1056C /* Info.plist */,
+			);
+			path = HJRefreshTool;
+			sourceTree = "<group>";
+		};
+		F847799724D8EE8A00D1056C /* RefreshTool */ = {
+			isa = PBXGroup;
+			children = (
+				F847799C24D8EEC900D1056C /* AutoRefeshViewHelper.swift */,
+				F847799924D8EEC900D1056C /* DefaultRefreshView.swift */,
+				F847799D24D8EEC900D1056C /* DefaultViewAnimator.swift */,
+				F847799E24D8EEC900D1056C /* PullToRefresh.swift */,
+				F847799824D8EEC900D1056C /* RefreshHelper.swift */,
+				F847799F24D8EEC900D1056C /* RefreshViewAnimator.swift */,
+				F847799A24D8EEC900D1056C /* State.swift */,
+				F847799B24D8EEC900D1056C /* UIScrollView+PullToRefresh.swift */,
+				F84779A824D8F44500D1056C /* RefreshSize.swift */,
+			);
+			path = RefreshTool;
+			sourceTree = "<group>";
+		};
+		F84779AC24D8F62300D1056C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F84779B124D8F84C00D1056C /* String+.swift */,
+				F84779AD24D8F65100D1056C /* UIColorExtension.swift */,
+				F84779AE24D8F65100D1056C /* ViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F847797F24D8EE5200D1056C /* HJRefreshTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F847799424D8EE5300D1056C /* Build configuration list for PBXNativeTarget "HJRefreshTool" */;
+			buildPhases = (
+				48D180E3B4C43D8F0E7CED60 /* [CP] Check Pods Manifest.lock */,
+				F847797C24D8EE5200D1056C /* Sources */,
+				F847797D24D8EE5200D1056C /* Frameworks */,
+				F847797E24D8EE5200D1056C /* Resources */,
+				F13DFA7EADEDDB1EC772BD15 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HJRefreshTool;
+			productName = HJRefreshTool;
+			productReference = F847798024D8EE5200D1056C /* HJRefreshTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F847797824D8EE5200D1056C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = chenganrt;
+				TargetAttributes = {
+					F847797F24D8EE5200D1056C = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F847797B24D8EE5200D1056C /* Build configuration list for PBXProject "HJRefreshTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F847797724D8EE5200D1056C;
+			productRefGroup = F847798124D8EE5200D1056C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F847797F24D8EE5200D1056C /* HJRefreshTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F847797E24D8EE5200D1056C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F847799024D8EE5300D1056C /* LaunchScreen.storyboard in Resources */,
+				F847798D24D8EE5300D1056C /* Assets.xcassets in Resources */,
+				F847798B24D8EE5200D1056C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48D180E3B4C43D8F0E7CED60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HJRefreshTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F13DFA7EADEDDB1EC772BD15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HJRefreshTool/Pods-HJRefreshTool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HJRefreshTool/Pods-HJRefreshTool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HJRefreshTool/Pods-HJRefreshTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F847797C24D8EE5200D1056C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F847798824D8EE5200D1056C /* ViewController.swift in Sources */,
+				F84779A724D8EEC900D1056C /* RefreshViewAnimator.swift in Sources */,
+				F84779A024D8EEC900D1056C /* RefreshHelper.swift in Sources */,
+				F84779A124D8EEC900D1056C /* DefaultRefreshView.swift in Sources */,
+				F84779A624D8EEC900D1056C /* PullToRefresh.swift in Sources */,
+				F847798424D8EE5200D1056C /* AppDelegate.swift in Sources */,
+				F84779AF24D8F65100D1056C /* UIColorExtension.swift in Sources */,
+				F84779B224D8F84C00D1056C /* String+.swift in Sources */,
+				F84779A924D8F44500D1056C /* RefreshSize.swift in Sources */,
+				F84779A524D8EEC900D1056C /* DefaultViewAnimator.swift in Sources */,
+				F847798624D8EE5200D1056C /* SceneDelegate.swift in Sources */,
+				F84779B024D8F65100D1056C /* ViewExtension.swift in Sources */,
+				F84779A324D8EEC900D1056C /* UIScrollView+PullToRefresh.swift in Sources */,
+				F84779A424D8EEC900D1056C /* AutoRefeshViewHelper.swift in Sources */,
+				F84779A224D8EEC900D1056C /* State.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F847798924D8EE5200D1056C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F847798A24D8EE5200D1056C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F847798E24D8EE5300D1056C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F847798F24D8EE5300D1056C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F847799224D8EE5300D1056C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F847799324D8EE5300D1056C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F847799524D8EE5300D1056C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A4F9B9F60967E3762323CE /* Pods-HJRefreshTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SZZ9EUZG2;
+				INFOPLIST_FILE = HJRefreshTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenganrt.HJRefreshTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F847799624D8EE5300D1056C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92DF3BF81C4B51202B5B96A /* Pods-HJRefreshTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SZZ9EUZG2;
+				INFOPLIST_FILE = HJRefreshTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenganrt.HJRefreshTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F847797B24D8EE5200D1056C /* Build configuration list for PBXProject "HJRefreshTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F847799224D8EE5300D1056C /* Debug */,
+				F847799324D8EE5300D1056C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F847799424D8EE5300D1056C /* Build configuration list for PBXNativeTarget "HJRefreshTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F847799524D8EE5300D1056C /* Debug */,
+				F847799624D8EE5300D1056C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F847797824D8EE5200D1056C /* Project object */;
+}
